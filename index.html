@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="border">
+        <div id="screen">
+            <div id="operation">9999</div>
+            <div id="result">9999</div>
+        </div>
+        <div id="erase">
+            <button id="clear" onclick="clear()">CLEAR</button>
+            <button id="delete" onclick="delet()">DELETE</button>
+        </div>
+        <div id="keys">
+            <button id="seven" onclick="number()">7</button>
+            <button id="eight" onclick="number()">8</button>
+            <button id="nine" onclick="number()">9</button>
+            <button id="divide" onclick="operator()">/</button>
+            <button id="four" onclick="number()">4</button>
+            <button id="five" onclick="number()">5</button>
+            <button id="six" onclick="number()">6</button>
+            <button id="multiply" onclick="operator()">x</button>
+            <button id="one" onclick="number()">1</button>
+            <button id="two" onclick="number()">2</button>
+            <button id="three" onclick="number()">3</button>
+            <button id="minus" onclick="operator()">-</button>
+            <button id="point" onclick="floate()">.</button>
+            <button id="zero" onclick="number()">0</button>
+            <button id="equal" onclick="enter()">=</button>
+            <button id="plus" onclick="operator()">+</button>
+        </div>
+    </div>
+</body>
+<script src="./script.js"></script>
+</html>
