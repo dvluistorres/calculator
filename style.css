@@ -1,0 +1,106 @@
+/* Style */
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 99vh;
+    background-color: gainsboro;
+}
+
+#border{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    background-color: rgb(163, 159, 159);
+    flex: 0 1 auto;
+    height: 700px;
+    width: 450px;
+    padding: 25px;
+    border-radius: 15px;
+    border-style: solid;
+
+}
+
+#screen{
+    flex : initial;
+    display: flex;
+    flex-direction: column;
+    max-width: 435px;
+    max-height: 200px;
+        
+}
+
+#operation{
+    background-color: gainsboro;
+    display: flex;
+    padding-left: 30px;
+    padding-top: 10px;
+    width: 395px;
+    height: 80px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-top: solid;
+    border-left: solid;
+    border-right: solid;
+    border-width: 3px;
+    font-size: 25px;
+}
+
+#result{
+    margin-bottom: 50px;
+    background-color: gainsboro;
+    max-width: 435px;
+    max-height: 80px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: end;
+    border: 10px;
+    flex: initial;
+    font-size: 45px;
+    padding-right: 30px;
+    padding-left: 10px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-bottom: solid;
+    border-left: solid;
+    border-right: solid;
+    border-width: 3px;
+}
+
+
+#keys{
+    display: flex;
+    flex-wrap: wrap;
+    flex: 0 1 100%;
+    gap: 10px;
+    justify-content: center;
+    font-weight: bolder;
+
+}
+
+#keys .button2{
+    background-color: gainsboro;
+    width: 210px;
+    height: 75px;
+    flex: initial;
+    padding: 20px;
+    border-radius: 8px;
+    border: solid;
+    border-width: 3px;
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+#keys .button{
+    background-color: gainsboro;
+    width: 100px;
+    height: 75px;
+    flex: initial;
+    border-radius: 8px;
+    border: solid;
+    border-width: 3px;
+    font-weight: bolder;
+    font-size: 20px;
+}
+
