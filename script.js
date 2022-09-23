@@ -5,6 +5,7 @@ let pressedNum = 0
 let lpbio = false ;// last pressed button is operator
  /** Para escribir un numero en la pantalla principal */
 const numberButtons = document.getElementsByClassName("numberButton");
+console.log (numberButtons);
 for (const numberButton of numberButtons) {
     numberButton.addEventListener('click', function onClick() {
         lpbio = false
@@ -76,7 +77,7 @@ function equal() {
 }
 
 function delet() {
-    document.getElementById("result").textContent = document.getElementById("result").textContent.slice(0, -1)
+    document.getElements("result").textContent = document.getElementById("result").textContent.slice(0, -1)
 }
 
 function eraseScreen() {
@@ -89,7 +90,7 @@ function eraseScreen() {
     document.getElementById("result").textContent=''
     document.getElementById("operation").textContent='';
 }
-
+ /**Update top screen deppending of action */
 function operationScreen1(){
     document.getElementById("operation").textContent=`${temp1} ${tempOperator} ${temp2} =`;
 }
@@ -98,8 +99,16 @@ function operationScreen2(){
     document.getElementById("operation").textContent=`${temp1} ${tempOperator}`;
 }
 
-
-const dot = document.getElementById("point")
+/** Disable dot if there is any */
+const dot = document.getElementById("110")
 function floate() {
     dot.disabled=true
 }
+
+/** to enable keyboard to press buttons */
+window.addEventListener('keydown', function(Event) {
+    const toPress = document.getElementById(`${Event.keyCode}`);
+    if(!toPress) return;
+    toPress.click();
+})
+
