@@ -76,8 +76,8 @@ function equal() {
     reset = true;
 }
 
-function delet() {
-    document.getElements("result").textContent = document.getElementById("result").textContent.slice(0, -1)
+function eras() {
+    document.getElementById("result").textContent = document.getElementById("result").textContent.slice(0, -1)
 }
 
 function eraseScreen() {
