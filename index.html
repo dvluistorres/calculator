@@ -10,28 +10,28 @@
 <body>
     <div id="border">
         <div id="screen">
-            <div id="operation">99999999</div>
-            <div id="result">9999999999</div>
+            <div id="operation"></div>
+            <div id="result"></div>
         </div>
         <div id="keys">
-            <button style="background-color: rgb(255, 123, 0)" class="button2" id="clear" onclick="clear()">CLEAR</button>
-            <button style="background-color: rgba(255, 238, 0, 0.897)"  class="button2" id="delete" onclick="delet()">DELETE</button>
-            <button class="button" id="seven" onclick="number()">7</button>
-            <button class="button" id="eight" onclick="number()">8</button>
-            <button class="button" id="nine" onclick="number()">9</button>
-            <button class="button" id="divide" onclick="operator()">/</button>
-            <button class="button" id="four" onclick="number()">4</button>
-            <button class="button" id="five" onclick="number()">5</button>
-            <button class="button" id="six" onclick="number()">6</button>
-            <button class="button" id="multiply" onclick="operator()">x</button>
-            <button class="button" id="one" onclick="number()">1</button>
-            <button class="button" id="two" onclick="number()">2</button>
-            <button class="button" id="three" onclick="number()">3</button>
-            <button class="button" id="minus" onclick="operator()">-</button>
-            <button class="button" id="point" onclick="floate()">.</button>
-            <button class="button" id="zero" onclick="number()">0</button>
-            <button class="button" id="equal" onclick="enter()">=</button>
-            <button class="button" id="plus" onclick="operator()">+</button>
+            <button style="background-color: rgb(255, 123, 0)" class="button2" id="clear" onclick="eraseScreen()">CLEAR</button>
+            <button style="background-color: rgba(255, 238, 0, 0.897)"  class="button2" id="delete" onclick="delet()">ERASE</button>
+            <button class= "numberButton button" id="seven">7</button>
+            <button class= "numberButton button" id="eight">8</button>
+            <button class= "numberButton button" id="nine">9</button>
+            <button class="operator button" id="divide" >/</button>
+            <button class= "numberButton button" id="four">4</button>
+            <button class= "numberButton button" id="five">5</button>
+            <button class= "numberButton button" id="six">6</button>
+            <button class="operator button" id="multiply" >x</button>
+            <button class= "numberButton button" id="one">1</button>
+            <button class= "numberButton button" id="two">2</button>
+            <button class= "numberButton button" id="three">3</button>
+            <button class="operator button" id="minus" >-</button>
+            <button class="numberButton button" id="point" onclick="floate()">.</button>
+            <button class= "numberButton button" id="zero">0</button>
+            <button class="button" id="equal" onclick="equal()">=</button>
+            <button class="operator button" id="plus" >+</button>
         </div>
     </div>
 </body>

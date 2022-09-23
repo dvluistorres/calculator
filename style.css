@@ -3,8 +3,9 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 99vh;
+    height: 98vh;
     background-color: gainsboro;
+    flex-direction: column;
 }
 
 #border{
@@ -19,6 +20,7 @@ body{
     padding: 25px;
     border-radius: 15px;
     border-style: solid;
+    margin: auto;
 
 }
 
@@ -26,8 +28,9 @@ body{
     flex : initial;
     display: flex;
     flex-direction: column;
-    max-width: 435px;
-    max-height: 200px;
+    width: 435px;
+    height: 220px;
+    margin-bottom: 50px;
         
 }
 
@@ -36,8 +39,8 @@ body{
     display: flex;
     padding-left: 30px;
     padding-top: 10px;
-    width: 395px;
-    height: 80px;
+    width: 399px;
+    height: 83px;
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
     border-top: solid;
@@ -48,7 +51,6 @@ body{
 }
 
 #result{
-    margin-bottom: 50px;
     background-color: gainsboro;
     max-width: 435px;
     max-height: 80px;
@@ -56,7 +58,7 @@ body{
     align-items: flex-end;
     justify-content: end;
     border: 10px;
-    flex: initial;
+    flex: 0 0 100%;
     font-size: 45px;
     padding-right: 30px;
     padding-left: 10px;
@@ -104,3 +106,14 @@ body{
     font-size: 20px;
 }
 
+.footer {
+    background: #eee;
+    color: darkmagenta;
+    flex: initial;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: auto;
+    padding: 10px;
+    font-size: 20px;
+  }
