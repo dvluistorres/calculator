@@ -54,7 +54,8 @@ for (const operator of operators) {
 
 /**Evaluador */
 function equal() {
-    lpbio = false
+    lpbio = false;
+    dot.disabled=false;
     operatorActive = false;
     temp2 = document.getElementById("result").textContent
     operationScreen1()
